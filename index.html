@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+        
+            background-image: url(gymm.jpg);
+            background-size: 100%;
+            /* object-fit:cover; */  
+            /* background-image: ; */
+        }
+        .left{
+            color: aliceblue;
+            border: 2px solid green;
+            position: absolute;
+            left: 10px;
+            top: 25px;
+        }
+        .mid{
+            margin: 2px 2px;
+            padding: 8px 6px;
+            color: aqua;
+            border: 2px solid white;
+            display: block;
+            /* position: absolute; */
+            width: 20%;
+            margin: 25px auto;
+        }
+        .right{
+            color: blue;
+            border: 2px solid rgb(11, 148, 89);
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 25px;
+        }
+
+        .navbar{
+            display: flex;
+            cursor: pointer;
+
+        }
+        .navbar li{
+            display: inline-block;
+            font-style: italic;
+            font-size: medium;
+            /* cursor: pointer; */
+            
+        }
+        .navbar li a{
+            color: aliceblue;
+            padding: 5px 5px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,.navbar li a.active{
+            text-decoration: underline;
+            color: aqua;
+        }
+        .left img{
+            width: 60px;
+            /* filter: invert(100%); */
+        }
+        .btn{
+            margin: 4px;
+            padding: 2px;
+            border: 2px solid palevioletred;
+            font-size: small;
+            font-style: italic;
+            border-radius: 13px;
+            cursor: pointer;
+
+        }
+        .btn:hover{
+            color: blue;
+            text-decoration:underline;
+        }
+        .container{
+            font-size: 22px;
+            color: rgb(9, 87, 45);
+            border: 2px solid rgb(154, 171, 9);
+            margin: 270px 10px;
+            padding: 80px 15px;
+        }
+        .form-group input{
+            text-align: center;
+            border: 2px solid red;
+            display: block;
+            border-radius: 11px;
+            width: 333px;
+            margin: 11px auto;
+            padding: 8px 2px;
+            font-size: 20px;
+            
+        }
+        .btnp{
+            margin: 10px 5px ;
+            padding: 2px 2px;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 2px solid palevioletred;
+            border-radius: 11px;
+        }
+        .btnp:hover{
+            text-decoration:underline; 
+            color:chartreuse;
+        }
+        .container h3{
+            text-align: center;
+        }
+        .btnp{
+            display: block;
+            margin: auto;
+            /* text-align: center; */
+        }
+    
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logojpg.jpg" alt="">
+            <div>Rahul fitness</div>
+
+        </div>
+    
+    </div>
+    <!-- mid box for navigation -->
+    <div class="mid">
+        
+            <ul class="navbar">
+                <li> <a href="https://www.youtube.com/" class="active">Home</a></li>
+                <li> <a href="#">About us</a></li>
+                <li> <a href="#">Fitnrss center</a></li>
+                <li> <a href="#">Contrct us</a></li>
+            </ul>
+    </div>
+    <!-- right box for input -->
+    <div class="right">
+        <button class="btn">Call us </button>
+        <button class="btn">Email us</button>
+    </div>
+
+</header>
+<div class="container">
+    <h3>join the best gym of jagatsinghpur Now</h3>
+    <form action="noaction.php">
+        <div class="form-group">
+            <ul> <input type="text" name="" placeholder="Enter your name"> </ul>
+            <ul>  <input type="text" name="" placeholder="Enter your Email"> </ul>
+            <ul> <input type="text" name="" placeholder="Enter your gender"></ul>
+            <ul>  <input type="text" name="" placeholder="Enter your locality"> </ul>
+
+            <button class="btnp">
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
+    
+</body>
+</html>
